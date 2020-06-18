@@ -1,0 +1,36 @@
+:root {
+	--bg:white;
+	--color:blue;
+
+	--a-color: blue;
+	--a-hover-color:gray;
+
+	--hr-color:black;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--color);
+}
+
+a,
+a:visited,
+a:active {
+	color: var(--a-color);
+}
+
+a:hover {
+	color: var(--a-hover-color);
+}
+
+hr {
+	border-top: 1px solid var(--hr-color);
+}
+
+ul {
+	list-style: none;
+}
+
+ul li::before {
+	content: "✓ ";
+}
